@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="build/app.js"></script>
+    <link rel="stylesheet" href="build/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <meta name="view-transition" content="same-origin" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner" class="navbar">
+        <button class="displayNone hamburger" aria-label="Open menu">☰</button>
+        <nav class="noneDisplay">
+            <ul class="navbar__items">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__link">Projects</a></li>
+                <li class="navbar__item"><a href="about-me.html" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
+                <div class="theme-switch">
+                    <button role="switch" aria-checked="false" class="switch" aria-label="Toggle dark mode">
+                        <span class="switch-slider"></span>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+
+        <dialog id="menu-dialog" class="menu-dialog">
+            <button class="close-dialog" aria-label="Close menu">✖</button>
+            <ul class="dialog__menu">
+                <li class="dialog__menu-item"><a href="index.html" class="dialog__menu-link">Home</a></li>
+                <li class="dialog__menu-item"><a href="projects.html" class="dialog__menu-link">My projects</a></li>
+                <li class="dialog__menu-item"><a href="about-me.html" class="dialog__menu-link">About me</a></li>
+                <li class="dialog__menu-item"><a href="contact.html" class="dialog__menu-link">Contact</a></li>
+            </ul>
+        </dialog>
+    </header>
+
+    <main id="#main-content" role="main">
+
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Jarne <span class="gradient-text">Tekin</span></h1>
+                <h2 class="hero__subtitle">Junior Developer</h2>
+                <p class="hero__intro">A Belgian <span class="glow">programmer</span> crafting both front-end
+                    and back-end solutions. Passionate about <span class="glow">JavaScript</span>,
+                    <span class="glow">EJS</span>, and <span class="glow">PHP</span>.
+                    Building scalable websites with modern tech.
+                </p>
+                <div class="hero__button">
+                    <button class="button hero__button--primary"><a href="projects.html">View Projects</a></button>
+                    <button class="button hero__button--secondary" popovertarget="contact-popover">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero__image-wrapper">
+                <img src="images/webp/JARNETRANS.webp" alt="Jarne Tekin" class="hero__image">
+                <div class="hero__background-shape"></div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title">My skills</h2>
+            <div class="skills__grid">
+                <div class="skills__item">
+                    <img src="images/webp/css-template.webp" alt="CSS logo" class="skills__logo">
+                </div>
+                <div class="skills__item">
+                    <img src="images/ejs-template.png" alt="EJS logo" class="skills__logo"> 
+                </div>
+                <div class="skills__item">
+                    <img src="images/webp/html-template.webp" alt="HTML logo" class="skills__logo">
+                </div>
+                <div class="skills__item">
+                    <img src="images/webp/js-template.webp" alt="JavaScript logo" class="skills__logo">
+                </div>
+            </div>
+        </section>
+
+        <div id="contact-popover" popover="auto" class="contact-popover" role="dialog" aria-modal="true">
+            <div class="contact-popover__content">
+                <h3 class="contact-popover__title">Let's Connect!</h3>
+                <ul class="contact-popover__list">
+                    <li class="contact-popover__item">
+                        <a href="mailto:jarnteki@student.arteveldehs.be" class="contact-popover__link">📧 Email Me</a>
+                    </li>
+                    <li class="contact-popover__item">
+                        <a href="https://www.linkedin.com/in/jarne-tekin" target="_blank"
+                            class="contact-popover__link">💼 LinkedIn</a>
+                    </li>
+                    <li class="contact-popover__item">
+                        <a href="contact.html" class="contact-popover__link">📝 Contact Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo" class="footer"></footer>
+    <div class="footer__content">
+        <p class="footer__text">Made with ❤️ for Artevelde Hogeschool</p>
+        <p class="footer__text">Inspired by 🎨 Personal Portfolio Template (Community) from Figma Community</p>
+        <div class="footer__links-container">
+            <ul class="footer__links">
+                <li>
+                    <a href="https://github.com/JarneTek" target="_blank" class="footer__link"
+                        aria-label="Visit my GitHub profile">
+                        <img class="footer__icon" src="images/webp/git.webp" alt="GitHub icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__link"
+                        aria-label="Follow me on Instagram">
+                        <img class="footer__icon" src="images/webp/insta.webp" alt="Instagram icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:jarnteki@student.arteveldehs.be" class="footer__link" aria-label="Send me an email">
+                        <img class="footer__icon" src="images/webp/e-mail.webp" alt="Email icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    <script src="build/app.js"></script>
+</body>
+</ul>
+</div>
+
+</html>

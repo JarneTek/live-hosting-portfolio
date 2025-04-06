@@ -1,0 +1,90 @@
+.hamburger {
+  font-size: var(--font-size-xlarge);
+  background: none;
+  border: none;
+  color: var(--text-color);
+  transition: transform var(--transition-speed) var(--transition-ease);
+
+  &:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+  }
+}
+
+.menu-dialog {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--overlay-background);
+  position: fixed;
+  z-index: var(--z-index-high);
+
+  &:not([open]) {
+    display: none;
+  }
+}
+
+.dialog__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xlarge);
+  width: 100%;
+  max-width: var(--max-width-content);
+  padding: var(--spacing-large);
+}
+
+.dialog__menu-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-secondary);
+  transition: all var(--transition-speed) var(--transition-ease);
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    color: var(--primary-color);
+
+    &::after {
+      transform: scaleX(1);
+      animation: glow-underline 3s infinite linear;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform var(--transition-speed) var(--transition-ease);
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+.close-dialog {
+  position: absolute;
+  top: var(--spacing-medium);
+  right: var(--spacing-medium);
+  background: none;
+  cursor: pointer;
+  z-index: var(--z-index-high);
+  transition: all var(--transition-speed) var(--transition-ease);
+  border: none;
+  font-size: var(--font-size-xlarge);
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--primary-color);
+    transform: rotate(90deg);
+  }
+}

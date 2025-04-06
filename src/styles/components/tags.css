@@ -1,0 +1,38 @@
+.card__tags {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(4rem, 1fr));
+  gap: var(--spacing-tiny);
+  margin: var(--spacing-small) auto;
+  max-width: 15rem;
+}
+
+.card__tag-html {
+  background-color: var(--component-blue);
+}
+
+.card__tag-css {
+  background-color: var(--component-orange);
+}
+
+.card__tag-js {
+  background-color: var(--component-yellow);
+}
+
+.tag {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-small);
+  height: 2rem;
+  min-width: 3rem;
+  font-size: var(--font-size-small);
+  text-align: center;
+  padding: var(--spacing-tiny);
+}
+
+@container (inline-size > 35rem) {
+  .card__tags {
+    margin: 0;
+    max-width: 12rem;
+  }
+}

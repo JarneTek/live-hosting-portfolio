@@ -1,0 +1,101 @@
+:root {
+  --card-background-color: #f8f9fa;
+  --primary-color: #4ec9b0;
+  --secondary-color: #569cd6;
+  --background-color: #f0f2f5;
+  --text-color: #1e1e1e;
+  --black-text-color: #2d2d2d;
+  --hover-color: rgba(78, 201, 176, 0.8);
+  --border-color: #e9ecef;
+  --light-text-color: #4a4a4a;
+  --header-footer-color: #ffffff;
+
+  --glow-color-1: #4ec9b0;
+  --glow-color-2: #569cd6;
+  --glow-color-3: #c586c0;
+  --accent-color: #4caf50;
+
+
+  --component-blue: #1a73e8; 
+  --component-green: #4ec9b0;
+  --component-purple: #c586c0;
+  --component-orange: #b85c00; 
+  --component-yellow: #946c00; 
+
+  --spacing-tiny: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --spacing-xlarge: 3rem;
+  --spacing-xxlarge: 5rem;
+
+  --mask-gradient: linear-gradient(to bottom, black, transparent);
+
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-xlarge: 2rem;
+  --font-size-xxlarge: 3rem;
+  --font-size-xxlarge2: 5rem;
+
+  --font-family-primary: "Inter", sans-serif;
+  --font-family-secondary: "Merriweather", serif;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --font-optical-sizing: auto;
+  --font-style-normal: 0;
+  --font-style-italic: -10;
+
+  --box-shadow-light: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  --box-shadow-heavy: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  --overlay-background: rgba(0, 0, 0, 0.8);
+  --mask-gradient-opacity: 70%;
+
+  --z-index-low: 10;
+  --z-index-medium: 100;
+  --z-index-high: 1000;
+
+  --transition-speed: 0.3s;
+  --transition-ease: ease-in-out;
+
+  --border-radius-small: 0.25rem;
+  --border-radius-medium: 0.5rem;
+  --border-radius-large: 1rem;
+  --border-radius-circle: 55%;
+
+  --max-width-body: 100%;
+  --max-width-container: 95rem;
+  --max-width-content: 85rem;
+
+  --header-height: 4rem;
+  --footer-height: 3rem;
+
+  --button-text-light: #ffffff; 
+  --button-text-dark: #000000; 
+  --button-primary-bg: #2a866f;
+  --button-secondary-bg: #2d2d2d; 
+
+  --glow-text-color: #2a866f; 
+  --body-text-color: #2d2d2d; 
+  --accent-text-color: #1a4f8b; 
+}
+
+[data-theme="dark"] {
+  --card-background-color: #2d2d2d;
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --black-text-color: #ffffff;
+  --border-color: #4a4a4a;
+  --light-text-color: #a9a9a9;
+  --header-footer-color: #2d2d2d;
+  --button-text-dark: #ffffff;
+  --button-text-light: #000000; 
+  --glow-text-color: #5edfc2;
+  --body-text-color: #f0f2f5; 
+}

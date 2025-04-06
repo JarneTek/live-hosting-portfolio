@@ -1,0 +1,52 @@
+
+@import "./base/variables.css";
+@import "./base/reset.css";
+
+@import "./components/button.css";
+@import "./components/cards.css"; 
+@import "./components/navigation.css";
+@import "./components/breadcrumb.css";
+@import "./components/theme-switch.css";
+@import "./components/tags.css";
+@import "./components/skipLink.css";
+@import "./components/image-text.css";
+@import "./components/detail.css";
+@import "./components/form.css";
+@import "./components/hamburger-menu.css";
+
+@import "./layout/header.css";
+@import "./layout/footer.css";
+@import "./layout/hero.css";
+@import "./layout/skills.css";
+
+@import "./animations/animations.css";
+
+body,
+footer {
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  container-type: inline-size;
+  max-width: var(--max-width-body);
+  margin: 0 auto;
+}
+
+body {
+  font-variation-settings: "wght" var(--font-weight-regular);
+}
+
+main {
+  margin: 0 auto;
+  color: var(--text-color);
+  padding-inline: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+  display: grid;
+  container-type: inline-size;
+  max-width: var(--max-width-content);
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-inline: var(--spacing-xlarge);
+  }
+}

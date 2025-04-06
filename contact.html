@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="build/app.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="build/main.css">
+    <meta name="view-transition" content="same-origin" />
+</head>
+
+<body>
+    <a href="#contact-form" class="skip-link">Skip to contact form</a>
+    <header role="banner" class="navbar">
+        <button class="displayNone hamburger" aria-label="Open menu">☰</button>
+        <nav class="noneDisplay">
+            <ul class="navbar__items">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__link">Projects</a></li>
+                <li class="navbar__item"><a href="about-me.html" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
+                <div class="theme-switch">
+                    <button role="switch" aria-checked="false" class="switch" aria-label="Toggle dark mode">
+                        <span class="switch-slider"></span>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+
+        <dialog id="menu-dialog" class="menu-dialog">
+            <button class="close-dialog" aria-label="Close menu">✖</button>
+            <ul class="dialog__menu">
+                <li class="dialog__menu-item"><a href="index.html" class="dialog__menu-link">Home</a></li>
+                <li class="dialog__menu-item"><a href="projects.html" class="dialog__menu-link">My projects</a></li>
+                <li class="dialog__menu-item"><a href="about-me.html" class="dialog__menu-link">About me</a></li>
+                <li class="dialog__menu-item"><a href="contact.html" class="dialog__menu-link">Contact</a></li>
+            </ul>
+        </dialog>
+    </header>
+    <main id="contact-form" role="main">
+        <section class="header header--contact">
+            <div class="header__content">
+                <h2 class="header__title">Get in <span class="gradient-text">Touch</span></h2>
+                <p class="header__description">
+                    Let's collaborate! Whether you have a project in mind or just want to connect,
+                    I'm always excited to hear from fellow developers and potential clients.
+                </p>
+            </div>
+        </section>
+
+        <section class="form">
+
+
+            <div class="form__image-container" role="img" aria-label="Contact form image">
+                <img src="images/webp/marble.webp" alt="Contact form image" class="form__image">
+
+            </div>
+
+            <form method="post" action="" accept-charset="UTF-8" class="contact-form__form">
+                <input type="hidden" name="CRAFT_CSRF_TOKEN" value="{{ csrfInput() }}" class="contact-form__csrf">
+                <input type="hidden" name="action" value="contact-form/send" class="contact-form__action">
+                <input type="hidden" name="redirect" value="contact/thanks" class="contact-form__redirect">
+
+                <div class="contact-form__group">
+                    <label for="from-name" class="contact-form__label">Your Name</label>
+                    <input type="text" name="fromName" id="from-name" value="" autocomplete="name"
+                        class="contact-form__input">
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="from-email" class="contact-form__label">Your Email</label>
+                    <input type="email" name="fromEmail" id="from-email" value="" autocomplete="email"
+                        class="contact-form__input">
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="subject" class="contact-form__label">Subject</label>
+                    <input type="text" name="subject" id="subject" value="" class="contact-form__input">
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label" for=""></label>
+                    <textarea class="contact-form__textarea" name="" id="">Enter your message</textarea>
+                </div>
+
+                <button type="submit" class="contact-form__button">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo" class="footer"></footer>
+    <div class="footer__content">
+        <p class="footer__text">Made with ❤️ for Artevelde Hogeschool</p>
+        <p class="footer__text">Inspired by 🎨 Personal Portfolio Template (Community) from Figma Community</p>
+        <div class="footer__links-container">
+            <ul class="footer__links">
+                <li>
+                    <a href="https://github.com/JarneTek" target="_blank" class="footer__link"
+                        aria-label="Visit my GitHub profile">
+                        <img class="footer__icon" src="images/webp/git.webp" alt="GitHub icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__link"
+                        aria-label="Follow me on Instagram">
+                        <img class="footer__icon" src="images/webp/insta.webp" alt="Instagram icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:jarnteki@student.arteveldehs.be" class="footer__link" aria-label="Send me an email">
+                        <img class="footer__icon" src="images/webp/e-mail.webp" alt="Email icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    <script type="module" src="build/app.js"></script>
+</body>
+
+</html>

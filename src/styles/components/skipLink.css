@@ -1,0 +1,21 @@
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: var(--spacing-small);
+  z-index: var(--z-index-high);
+  text-decoration: none;
+  border-radius: var(--border-radius-small);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+
+  &:focus {
+    top: var(--spacing-small);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

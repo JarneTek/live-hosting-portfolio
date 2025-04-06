@@ -1,0 +1,108 @@
+.skills__logo {
+  view-timeline-name: --reveal;
+  view-timeline-axis: block;
+  animation-name: skill-reveal;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+.hero__content {
+  view-transition-name: hero;
+  animation: reveal 0.8s ease-out;
+}
+
+::view-transition-old(hero) {
+  animation: fadeOut 0.5s ease-out;
+}
+
+::view-transition-new(hero) {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.header__content {
+  view-transition-name: header;
+  animation: reveal 0.8s ease-out;
+}
+
+::view-transition-old(header) {
+  animation: fadeOut 0.5s ease-out;
+}
+
+::view-transition-new(header) {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes glow-underline {
+  0% {
+    box-shadow: 0 0 5px var(--glow-color-1), 0 0 10px var(--glow-color-1);
+  }
+  33% {
+    box-shadow: 0 0 5px var(--glow-color-2), 0 0 10px var(--glow-color-2);
+  }
+  66% {
+    box-shadow: 0 0 5px var(--glow-color-3), 0 0 10px var(--glow-color-3);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--glow-color-1), 0 0 10px var(--glow-color-1);
+  }
+}
+
+@keyframes skill-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes glow-border {
+  0% {
+    box-shadow: 0 0 5px var(--glow-color-1), 0 0 20px var(--glow-color-1);
+  }
+  33% {
+    box-shadow: 0 0 5px var(--glow-color-2), 0 0 20px var(--glow-color-2);
+  }
+  66% {
+    box-shadow: 0 0 5px var(--glow-color-3), 0 0 20px var(--glow-color-3);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--glow-color-1), 0 0 20px var(--glow-color-1);
+  }
+}
+
+
+
+
+
