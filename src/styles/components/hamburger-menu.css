@@ -18,7 +18,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: var(--overlay-background);
+  background: black;
   position: fixed;
   z-index: var(--z-index-high);
 
@@ -40,7 +40,7 @@
 }
 
 .dialog__menu-link {
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
@@ -81,7 +81,7 @@
   transition: all var(--transition-speed) var(--transition-ease);
   border: none;
   font-size: var(--font-size-xlarge);
-  color: var(--text-color);
+  color: white;
 
   &:hover {
     color: var(--primary-color);

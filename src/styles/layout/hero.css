@@ -99,6 +99,7 @@
   gap: var(--spacing-medium);
 }
 
+
 .contact-popover__title {
   color: var(--light-text-color);
   font-size: var(--font-size-large);
@@ -111,6 +112,7 @@
   padding: 0;
   display: grid;
   gap: var(--spacing-small);
+  align-items: center;
 }
 
 .contact-popover__link {

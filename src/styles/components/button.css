@@ -107,3 +107,29 @@
     text-decoration: none;
   }
 }
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-small);
+  margin-top: var(--spacing-small);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  transition: color 0.3s ease;
+}
+
+.github-link:hover {
+  color: var(--primary-color);
+}
+
+.github-link__icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+}
+
+.github-link:hover .github-link__icon {
+  opacity: 1;
+}

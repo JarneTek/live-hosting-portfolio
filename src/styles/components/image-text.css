@@ -45,11 +45,26 @@
   margin-bottom: var(--spacing-medium);
 }
 
+.about__subtitle--spaced {
+  margin-top: var(--spacing-large);
+}
+
 .about__description {
   font-size: var(--font-size-medium);
   margin-bottom: var(--spacing-medium);
   color: var(--text-color);
   line-height: 1.6;
+}
+
+.about__list {
+  list-style: none;
+  margin-top: var(--spacing-medium);
+  padding: 0;
+}
+
+.about__list li {
+  margin-bottom: var(--spacing-small);
+  padding: 0;
 }
 
 .text-glow, 

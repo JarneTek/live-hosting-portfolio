@@ -44,9 +44,12 @@ main {
   container-type: inline-size;
   max-width: var(--max-width-content);
 }
-
 @media (min-width: 768px) {
   main {
     padding-inline: var(--spacing-xlarge);
+  }
+  .project-detail__image{
+    height: 20rem;
+    width: 35rem;
   }
 }
