@@ -18,15 +18,21 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .card--project:nth-child(2) .card__content {
-      grid-template-columns: 1fr 1fr;
+    /* Odd numbered articles (1, 3, 5, etc.) - image right, info left (default) */
+    .card--project:nth-child(odd) .card__image-container {
+      order: 2;
     }
 
-    .card--project:nth-child(2) .card__image-container {
+    .card--project:nth-child(odd) .card__info {
       order: 1;
     }
 
-    .card--project:nth-child(2) .card__info {
+    /* Even numbered articles (2, 4, 6, etc.) - image left, info right */
+    .card--project:nth-child(even) .card__image-container {
+      order: 1;
+    }
+
+    .card--project:nth-child(even) .card__info {
       order: 2;
     }
 
@@ -49,14 +55,24 @@
   background-color: var(--card-background-color);
   border-radius: var(--border-radius-medium);
   gap: var(--spacing-small);
+  height: 100%;
 
   &:hover {
     animation: glow-border 3s infinite linear;
+  }
+
+  @container (inline-size > 35rem) {
+    min-height: 400px;
   }
 }
 
 .card__image-container {
   overflow: hidden;
+  min-height: 200px;
+
+  @container (inline-size > 35rem) {
+    min-height: 250px;
+  }
 }
 
 .card__image {
@@ -75,4 +91,3 @@
 .card--project .card__content:hover {
   animation: glow-border 3s infinite linear;
 }
-
