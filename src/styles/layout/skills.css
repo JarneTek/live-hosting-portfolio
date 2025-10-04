@@ -14,7 +14,7 @@
 
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--spacing-large);
   max-width: var(--max-width-content);
   margin: 0 auto;
@@ -73,15 +73,15 @@
   transform: translateY(0);
 }
 
-@container (min-width: 400px) {
+@container (min-width: 500px) {
   .skills__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@container (min-width: 600px) {
+@container (min-width: 800px) {
   .skills__grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

@@ -91,20 +91,39 @@
   color: var(--button-text-light);
 }
 
-.project__button-prim {
+/* Project button specific styling - higher specificity to override defaults */
+a.project__button-prim {
   background-color: var(--button-primary-bg);
   color: var(--button-text-light);
   padding: var(--spacing-small) var(--spacing-medium);
   transition: transform var(--transition-speed) var(--transition-ease);
+  text-decoration: none;
+  border-radius: var(--border-radius-small);
+
+  /* Perfect centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Remove any inherited styles that might interfere */
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+
+  /* Ensure consistent height */
+  min-height: 2.5rem;
 
   &:hover {
     transform: scale(1.05);
     background-color: var(--hover-color);
-  }
-
-  a {
     color: var(--button-text-light);
     text-decoration: none;
+  }
+
+  &:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
   }
 }
 
