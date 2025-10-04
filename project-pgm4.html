@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-detail</title>
+    <title>Task Manager - Project Detail</title>
     <link rel="stylesheet" href="build/main.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-    <a href="#projectpgm4" class="skip-link">Skip to contact form</a>
+    <a href="#project-pgm4" class="skip-link">Skip to project content</a>
+
     <header role="banner" class="navbar">
         <button class="displayNone hamburger" aria-label="Open menu">☰</button>
         <nav class="noneDisplay">
@@ -28,7 +29,7 @@
         </nav>
 
         <dialog id="menu-dialog" class="menu-dialog">
-            <button class="close-dialog" aria-label="Close menu">✖</button>
+            <button class="close-dialog" aria-label="Close menu">×</button>
             <ul class="dialog__menu">
                 <li class="dialog__menu-item"><a href="index.html" class="dialog__menu-link">Home</a></li>
                 <li class="dialog__menu-item"><a href="projects.html" class="dialog__menu-link">My projects</a></li>
@@ -54,7 +55,7 @@
         </ol>
     </nav>
 
-    <main id="projectpgm4" role="main">
+    <main id="project-pgm4" role="main">
         <section class="project-detail" aria-labelledby="project-title">
             <section class="header header--project">
                 <div class="header__content">
@@ -63,8 +64,8 @@
                     </h2>
                     <p class="header__description" tabindex="0">
                         A comprehensive task management application built with HTML, CSS, and React, featuring API
-                        data
-                        rendering and dynamic task manipulation. All tasks can be adjusted via the CRUD operations. Without refresh. 
+                        data rendering and dynamic task manipulation. All tasks can be adjusted via the CRUD operations
+                        without refresh.
                     </p>
                 </div>
             </section>
@@ -76,15 +77,19 @@
             <div class="project-detail__overview" aria-labelledby="overview-title">
                 <h2 id="overview-title" tabindex="0">Overview</h2>
 
-                <img class="project-detail__image" src="images/overview1.png" alt="Detailed view of Task Manager project section 1"
-                    popovertarget="image-popover" aria-label="Click to make image bigger">
-                <img class="project-detail__image" src="images/overview2.png" alt="Detailed view of Task Manager project section 2"
-                    popovertarget="image-popover" aria-label="Click to make image bigger">
-                <img class="project-detail__image" src="images/backlog.png" alt="Detailed view of Task Manager project section 3"
-                    popovertarget="image-popover" aria-label="Click to make image bigger">
+                <img class="project-detail__image" src="images/overview1.png"
+                    alt="Detailed view of Task Manager project section 1" popovertarget="image-popover"
+                    aria-label="Click to enlarge image">
+                <img class="project-detail__image" src="images/overview2.png"
+                    alt="Detailed view of Task Manager project section 2" popovertarget="image-popover"
+                    aria-label="Click to enlarge image">
+                <img class="project-detail__image" src="images/backlog.png"
+                    alt="Detailed view of Task Manager project section 3" popovertarget="image-popover"
+                    aria-label="Click to enlarge image">
             </div>
 
-            <div id="image-popover" popover="auto" class="image-popover" role="dialog" aria-modal="true">
+            <div id="image-popover" popover="auto" class="image-popover" role="dialog" aria-modal="true"
+                aria-label="Image preview">
                 <img src="" alt="" class="image-popover__img" tabindex="0">
             </div>
         </section>
@@ -92,8 +97,8 @@
 
     <footer role="contentinfo" class="footer"></footer>
     <div class="footer__content">
-        <p class="footer__text">Made with ❤️ for Artevelde Hogeschool</p>
-        <p class="footer__text">Inspired by 🎨 Personal Portfolio Template (Community) from Figma Community</p>
+        <p class="footer__text">Made with love for Artevelde Hogeschool</p>
+        <p class="footer__text">Inspired by Personal Portfolio Template (Community) from Figma Community</p>
         <div class="footer__links-container">
             <ul class="footer__links">
                 <li>
@@ -118,44 +123,6 @@
     </div>
     </footer>
     <script src="build/app.js"></script>
-</body>
-
-</html>
-<a href="projects.html" class="nav-link nav-link--back">
-    ← Back to Projects
-</a>
-</div>
-</section>
-</main>
-
-<footer role="contentinfo" class="footer">
-    <div class="footer__content">
-        <p class="footer__text">Made with ❤️ for Artevelde Hogeschool</p>
-        <p class="footer__text">Inspired by 🎨 Personal Portfolio Template (Community) from Figma Community</p>
-        <div class="footer__links-container">
-            <ul class="footer__links">
-                <li>
-                    <a href="https://github.com/JarneTek" target="_blank" class="footer__link"
-                        aria-label="Visit my GitHub profile">
-                        <img class="footer__icon" src="images/webp/git.webp" alt="GitHub icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__link"
-                        aria-label="Follow me on Instagram">
-                        <img class="footer__icon" src="images/webp/insta.webp" alt="Instagram icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:jarnteki@student.arteveldehs.be" class="footer__link" aria-label="Send me an email">
-                        <img class="footer__icon" src="images/webp/e-mail.webp" alt="Email icon">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
-<script src="build/app.js"></script>
 </body>
 
 </html>
